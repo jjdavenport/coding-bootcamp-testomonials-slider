@@ -19,9 +19,13 @@ export default {
       fontFamily: {
         custom: ["inter", "sans-serif"],
       },
+      backgroundSize: {
+        half: "15%",
+      },
       backgroundImage: {
         pattern: "url('./src/components/assets/pattern-bg.svg')",
         curve: "url('./src/components/assets/pattern-curve.svg')",
+        quote: "url('./src/components/assets/pattern-quotes.svg')",
       },
     },
   },

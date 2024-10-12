@@ -3,7 +3,6 @@ import { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Nav from "./components/nav";
 import Slide1 from "./components/slide-1";
 import Slide2 from "./components/slide2";
 
@@ -27,8 +26,8 @@ function App() {
   };
   return (
     <>
-      <div className="h-full flex flex-col min-h-screen relative text-default font-custom bg-curve bg-no-repeat  bg-left-bottom">
-        <main className="flex flex-1 flex-col justify-center">
+      <div className="h-full flex flex-col min-h-screen relative text-default font-custom bg-curve bg-no-repeat bg-left-bottom">
+        <main className="flex flex-1 flex-col justify-center py-4">
           <Slider ref={sliderRef} {...settings}>
             <div>
               <Slide1 prev={prev} next={next} />
