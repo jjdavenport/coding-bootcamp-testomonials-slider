@@ -27,18 +27,19 @@ function App() {
   };
   return (
     <>
-      <main>
-        <Slider ref={sliderRef} {...settings}>
-          <div>
-            <Slide1 />
-          </div>
-          <div>
-            <Slide2 />
-          </div>
-        </Slider>
-      </main>
-      <Nav prev={prev} next={next} />
-      <Footer />
+      <div className="h-full flex flex-col min-h-screen relative text-default font-custom bg-curve bg-no-repeat  bg-left-bottom">
+        <main className="flex flex-1 flex-col justify-center">
+          <Slider ref={sliderRef} {...settings}>
+            <div>
+              <Slide1 prev={prev} next={next} />
+            </div>
+            <div>
+              <Slide2 prev={prev} next={next} />
+            </div>
+          </Slider>
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
