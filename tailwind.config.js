@@ -21,11 +21,15 @@ export default {
       },
       backgroundSize: {
         half: "15%",
+        quarter: "18%",
       },
       backgroundImage: {
-        pattern: "url('./src/components/assets/pattern-bg.svg')",
-        curve: "url('./src/components/assets/pattern-curve.svg')",
-        quote: "url('./src/components/assets/pattern-quotes.svg')",
+        pattern: "url('../src/components/assets/pattern-bg.svg')",
+        curve: "url('../src/components/assets/pattern-curve.svg')",
+        quote: "url('../src/components/assets/pattern-quotes.svg')",
+      },
+      backgroundPosition: {
+        leftTop: "5rem top",
       },
     },
   },

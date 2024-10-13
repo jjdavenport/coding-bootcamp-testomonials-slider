@@ -26,7 +26,7 @@ function App() {
   };
   return (
     <>
-      <div className="h-full flex flex-col min-h-screen relative text-default font-custom bg-curve bg-no-repeat bg-left-bottom">
+      <div className="relative flex h-full min-h-screen flex-col bg-curve bg-left-bottom bg-no-repeat font-custom text-default">
         <main className="flex flex-1 flex-col justify-center py-4">
           <Slider ref={sliderRef} {...settings}>
             <div>
